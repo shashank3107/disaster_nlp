@@ -1,0 +1,42 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Model weights / checkpoints (too large for GitHub)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+**/checkpoint-*/
+
+# Data & large artifacts
+*.csv
+*.tsv
+*.parquet
+*.zip
+*.tar
+*.tar.gz
+*.npz
+*.npy
+
+# Caches / logs
+.geocode_cache.json
+*.log
+.cache/
+wandb/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

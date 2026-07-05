@@ -1,0 +1,34 @@
+# Disaster Tweet Intelligence — application dependencies
+# Install:  pip install -r requirements_app.txt
+#
+# CPU-only: classification (RoBERTa), NER (BERT) and embeddings (BGE) run on CPU;
+# generation goes to the Gemini API, so no GPU is required.
+
+# core ML
+torch>=2.2
+transformers>=4.40
+sentence-transformers>=2.7
+faiss-cpu>=1.8
+
+# knowledge graph
+networkx>=3.0
+pyvis>=0.3.2
+
+# app + LLM API
+streamlit>=1.33
+google-generativeai>=0.7
+
+# data / viz
+pandas>=2.0
+matplotlib>=3.7
+
+# language detection + translation (translate non-English tweets before classifying)
+deep-translator>=1.11
+langdetect>=1.0.9
+
+# affected-areas map on the resource dashboard (pydeck ships with streamlit)
+geopy>=2.4
+pydeck>=0.9
+
+# tokeniser backend for DeBERTa (only if you use deberta checkpoints)
+# sentencepiece>=0.1.99
